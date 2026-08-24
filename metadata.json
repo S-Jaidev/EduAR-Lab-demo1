@@ -1,0 +1,6 @@
+{
+  "name": "EduAR Lab",
+  "description": "Educational AR laboratory platform MVP turning textbook learning into interactive virtual laboratory simulations and AI-guided experiments.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

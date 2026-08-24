@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+@keyframes scan {
+  0%, 100% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+}
+
+.circuit-line {
+  stroke-dasharray: 8;
+  animation: flow 1.5s linear infinite;
+}
+
+.glow-bulb {
+  filter: drop-shadow(0 0 18px rgba(255, 230, 0, 0.85));
+}
+
+.scanner-line {
+  height: 2px;
+  background: #22d3ee;
+  box-shadow: 0 0 12px #22d3ee, 0 0 4px #06b6d4;
+  animation: scan 3s ease-in-out infinite;
+}
+
+/* Hide scrollbar for clean chip horizontal scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
